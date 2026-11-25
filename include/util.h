@@ -7,5 +7,6 @@ void trimWhitespace(char* str);
 bool stringEquals(const char* a, const char* b);
 void printHeader(const char* title);
 void clearScreen();
+bool parseRoomCode(const char* text, int& floor, int& room); // "F2-R3" -> 2, 3
 
 #endif // UTIL_H
