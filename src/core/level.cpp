@@ -284,7 +284,7 @@ const char* getEntityName(char entitySymbol)
         case ENT_OBSERVATION_TOKEN:
             return "Observation Token";
         default:
-            return "Unknoen Item";
+            return "Unknown Item";
     }
 }
 
