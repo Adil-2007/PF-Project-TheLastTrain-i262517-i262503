@@ -51,7 +51,7 @@ bool stringEquals(const char* a, const char* b)     // Case-sensitive comparison
     int i = 0;
     while(a[i] != '\0' && b[i] != '\0')
     {
-        if(tolower(unsigned char)a[i] != tolower(unsigned char)b[i])
+        if(tolower((unsigned char)a[i]) != tolower((unsigned char)b[i]))
         {
             return false;
         }
@@ -95,6 +95,7 @@ bool parseRoomCode(const char* text, int& floor, int& room)
 
     floor = f;
     room = r;
+
 
     return true;
 }
