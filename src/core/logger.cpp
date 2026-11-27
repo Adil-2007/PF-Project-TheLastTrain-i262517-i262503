@@ -198,5 +198,16 @@ void writeGaemSummaryReport(const char* filename, int score, int remainingEnergy
             done++;
             pointsCheck += SCORE_ITEM_POINTS[i];
         }
+        fout << " [" << (ok ? "X" : " ") << SCORE_ITEM_LABEL[i] << " (+" << SCORE_ITEM_POINTS[i] << ")\n";
     }
+
+    fout << "OBJECTIVES COMPLETED: " << done << " / " << NUM_SCORE_ITEMS << " (points from checklist: )" << pointsCheck << ")\n\n";
+
+    fout << "SESSION AUDIT (" << auditCount << " commands)\n";
+    for(int i = 0; i < auditCount; i++)
+    {
+        fout << " " << (i + 1) << ". " << auditLog[i] << "\n";
+    }
+
+
 }
