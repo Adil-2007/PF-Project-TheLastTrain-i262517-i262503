@@ -59,3 +59,23 @@ void renderRoomDetails(int floor, int room, const char roomEntities[NUM_FLOORS][
     }
 }
 
+static const char MAP_CONN[NUM_FLOORS][ROOMS_PER_FLOOR - 1] = {
+    {'W', '=', 'D'}, {'D', '=', 'D'}, {'L','W','D'}, {'W', '#', 'D'}, {'D', 'D', 'W'}
+};
+
+static const char* MAP_LEFT[NUM_FLOORS] = {
+    "S1 ", "S1 S2 ", "S2 ", "S3 ", "S3 "
+};
+
+static const char* MAP_RIGHT[NUM_FLOORS] = {
+    ""," L2", " (L2 bypasses F3)", "L2", "L2"
+};
+
+void renderAsciiBuilding(int playerFloor, int playerRoom)
+{
+    const char* border = "        +-------------+-------------+-------------+-------------+\n";
+
+    cout << "\n The LAST TRAIN - FACILITY MAP\n";
+    cout << border;
+    for()
+}
