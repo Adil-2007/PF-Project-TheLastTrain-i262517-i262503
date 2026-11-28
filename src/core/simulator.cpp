@@ -6,6 +6,7 @@
 #include "util.h"
 #include "level.h"
 #include <iostream>
+#include <cstdio>
 #include <cstring>
 using namespace std;
 

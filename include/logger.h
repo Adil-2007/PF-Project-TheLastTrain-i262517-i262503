@@ -24,4 +24,5 @@ void writeGameSummaryReport(const char* filename,
                             int score, int remainingEnergy, int remainingTime,
                             const bool objectives[NUM_OBJECTIVES], bool victory);
 
+void recordAuditEntry(const char* text);        // Session audit trail
 #endif // LOGGER_H
